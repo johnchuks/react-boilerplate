@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home.jsx';
-import About from './About.jsx';
+import Sample from './Sample.jsx';
 
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route exact path='/about' component={About} />
+      <Route exact path='/sample' component={Sample} />
     </Switch>
   </BrowserRouter>
 )

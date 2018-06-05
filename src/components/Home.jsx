@@ -5,7 +5,7 @@ const Home = () => (
   <div>
     <h1>Welcome to my React Boilerplate</h1>&nbsp;
 
-    <Link to='/about'>About</Link>
+    <Link to='/sample'>SampleLink</Link>
     </div>
 )
 export default Home;
