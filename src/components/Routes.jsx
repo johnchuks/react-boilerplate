@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
+import Home from './Home.jsx';
+import About from './About.jsx';
 
 
 const Routes = () => (
@@ -12,3 +12,4 @@ const Routes = () => (
     </Switch>
   </BrowserRouter>
 )
+export default Routes;
