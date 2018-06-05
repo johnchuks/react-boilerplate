@@ -7,13 +7,18 @@ const environment = process.env.NODE_ENV;
 
 const devConfig = {
   mode: environment || 'development',
+  devtool: 'inline-source-map',
   devServer: {
     historyApiFallback: true,
     publicPath: '/build',
     port: 9000,
     hot: true,
     publicPath: 'http://localhost:9000'
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
+  ]
 }
-console.log('i am here', devConfig);
 module.exports = merge(baseConfig, devConfig);
