@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack --config webpack.config.dev.js",
-    "start:dev": "npm run build:dev && webpack-dev-server --config webpack.config.dev.js --progress --colors"
+    "start:dev": "npm run build:dev && webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "start": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-router-dom": "^4.2.2",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.2",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
